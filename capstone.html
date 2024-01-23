@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geoffrey Yro Auza - Portfolio</title>
+
+  <link rel="stylesheet" type="text/css" href="capstone.css">
+
+</head>
+<body>
+
+  <header>
+    <h1>Geoffrey Yro Auza Portfolio</h1>
+    
+        <a href="https://www.youtube.com/watch?v=9QniWVhBXCI&t=82s">  <img height="100px" width="100px" src="https://st.depositphotos.com/1202020/3201/i/450/depositphotos_32011021-stock-photo-information-technology-it.jpg " alt="Your Photo"> </a>
+    <p>Hi, I'm Geoffrey and this is my Portfolio</p>
+  </header>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <!-- Add more skills as needed -->
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div>
+      <h3>Project 1</h3>
+      <p>Wordpress Apartment website</p>
+      <!-- Add images, links, and descriptions for each project -->
+      <a href="https://github.com/settings/ssh/new" target="_blank">GitHub Repository</a>
+      <a href="http://goauza.com/unit-4-2/" target="_blank">Live Demo</a>
+    </div>
+
+    <div>
+      <h3>Project 2</h3>
+      <p>Snake Game</p>
+      <a href="https://github.com/guauza18/desktop-tutorial/releases/tag/js" target="_blank">GitHub Repository</a>
+      <a href="http://127.0.0.1:5500/snake.html" target="_blank">Live Demo</a>
+    </div>
+
+    <div>
+        <h3>Project 1</h3>
+        <p>My Portfolio</p>
+        <a href="https://github.com/settings/ssh/new" target="_blank">GitHub Repository</a>
+        <a href="http://goauza.com/unit-4-2/" target="_blank">Live Demo</a>
+      </div>
+    <!-- Add more projects as needed -->
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form id="contactForm" onsubmit="validateForm(event)">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
+
+    
+    </form>
+  </section>
+
+
+  <script>
+    function validateForm(event) {
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+  
+      if (!name || !email || !message) {
+        alert('Please fill out all fields.');
+        event.preventDefault();
+      }
+    }
+  </script>
+  <script src="capstone.js"></script>
+
+  <button onclick="myFunction()">Your Add Here</button>
+
+<script>
+function myFunction() {
+  alert("buy me a beer!!! <3");
+}
+</script>
+  
+
+</body>
+</html>
